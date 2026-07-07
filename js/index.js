@@ -85,19 +85,3 @@ const person = {
 }
 
 
-console.log("person:", person);
-console.log("person name:", person.name);
-console.log(Object.keys(person)); // <= Object.keys() method returns an array of a given object's own enumerable property names
-console.log(Object.values(person)); // <= Object.values() method returns an array of a given object's own enumerable property values
-
-
-
-// Array
-const fruits = ["apples", "oranges", "pears", "bananas"];
-const numArray = [1, 2, 3, 4, 5];
-const myArray = [21, "pear", [3, 7, 22], { objectsToo: true }];
-
-console.log("person:", person);
-
-
-
