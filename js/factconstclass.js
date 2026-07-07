@@ -28,19 +28,20 @@ const emily = new Student("Emily", 19, "321 Maple St");
 bob.greet();
 emily.greet();      
 
-// to get values form a database and display them on the console, you can use a function that simulates fetching data from a database. Here's an example of how you might do this:
-function fetchStudentsFromDatabase() {
-  // Simulating fetching data from a database
-  return [
-    { name: "Alice", age: 22, address: "123 Main St" },
-    { name: "John", age: 20, address: "456 Oak Ave" },
-    { name: "Bob", age: 21, address: "789 Pine Rd" },
-    { name: "Emily", age: 19, address: "321 Maple St" }
-  ];
+// class to create student objects
+class StudentClass {
+  constructor(name, age, address) {
+    this.name = name;
+    this.age = age;
+    this.address = address;
+  }
+
+  greet() {
+    console.log(`Hello, my name is ${this.name} and I am ${this.age} years old. find my address at ${this.address}`);
+  }
 }
 
-const students = fetchStudentsFromDatabase();
-students.forEach(student => {
-  const studentObj = new Student(student.name, student.age, student.address);
-  studentObj.greet();
-}); 
+const charlie = new StudentClass("Charlie", 23, "987 Cedar Ln");
+const diana = new StudentClass("Diana", 18, "654 Birch Blvd");
+charlie.greet();
+diana.greet();
