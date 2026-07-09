@@ -218,6 +218,3 @@
 // const prompt = require('prompt-sync')();
 // const selectedMovie = prompt("Enter the name of the movie you want to view details for (Inception, The Matrix, Interstellar): ");
 // displayMovieDetails(selectedMovie); 
-
-
-this is a nested function example in JavaScript used  in

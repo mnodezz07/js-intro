@@ -31,9 +31,7 @@ const phone = {
   price: 799,
 };  
 
-phone = "Samsung Galaxy S21"; // This will throw an error because phone is a constant
-//modified the phone object
-
+// modify properties of the phone object (don't reassign the const variable)
 phone.color = "Starlight";
 
 // add a new property to the phone object
@@ -43,7 +41,9 @@ phone.operatingSystem = "iOS 15";
 //change the price of the phone
 phone.price = 899000;
 
-console.log(phone);
-console.log(phone["brand"]); // Accessing property using bracket notation
-console.log(phone.model); // Accessing property using dot notation
+// console.log(phone);
+// console.log(phone["brand"]); // Accessing property using bracket notation
+// console.log(phone.model); // Accessing property using dot notation
+
+console.log(Object.keys(phone))
 
